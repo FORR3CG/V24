@@ -23,7 +23,6 @@ void fyllaFylki(long* fylki, unsigned long staerd) {
 
 int main() {
     unsigned long staerd;
-    int* b = nullptr;
     while(true) {
         cout << "Hversu stórt fylki? ";
         cin >> staerd;
