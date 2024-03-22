@@ -27,9 +27,14 @@ int main() {
         cout << "Hversu stórt fylki? ";
         cin >> staerd;
         if(staerd < 1) break;
-        long fylki[staerd];
+        //long fylki[staerd];
+        long* fylki = new long[staerd]; // int*, bool*, float*
+        float* ptr_pi = new float(3.14);
+        cout << *ptr_pi << endl;
+        delete ptr_pi;
         fyllaFylki(fylki, staerd);
         if(staerd <= 500) prentaFylki(fylki, staerd);
+        delete [] fylki;
     }
 
     return 0;
